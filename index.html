@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Reporte de Observaciones - Mantenimiento</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <form action="" class="formulario">
+      <img src="logo.jpg" class="imgLogo" />
+
+      <h1 class="formulario__titulo">Reporte de Observaciones</h1>
+      <h3 class="formulario__subtitulo">Mantenimiento</h3>
+      <p class="formulario__parrafo">
+        Llene su Observacion.
+      </p>
+
+      <label for="cliente" class="formulario__label">OBSERVADOR</label>
+
+      <select id="cliente" name="listacliente" class="formulario__input">
+        <option></option>
+        <option>Cesar Changanaqui</option>
+        <option>José Velasquez</option>
+        <option>Cesar Delgado</option>
+        <option>José Blancas</option>
+        <option>Roger Rodas</option>
+        <option>Ricardo Coaguila</option>
+        <option>Cristian Angulo</option>
+        <option>Jhonny Ortiz</option>
+        <option>Edward Vargas</option>
+      </select>
+
+      <label for="empleado" class="formulario__label"
+      >ACTIVIDAD</label>
+      <input
+      id="empleado"
+      type="text"
+      class="formulario__input"
+      placeholder="Detalla la actividad observada"
+      />
+
+      <label for="fecha" class="formulario__label"
+        >Indica la fecha de tu reserva</label
+      >
+      <input
+        id="fecha"
+        type="date"
+        class="formulario__input"
+        pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+      />
+
+      <label for="servicio" class="formulario__label"
+        >DETALLE</label
+      >
+      <input
+      id="servicio"
+      type="text"
+      class="formulario__input"
+      placeholder="Detalla la actividad observada"
+      />
+
+      <label for="hora" class="formulario__label"
+        >COMPROMISO</label
+      >
+      <input
+      id="hora"
+      type="text"
+      class="formulario__input"
+      placeholder="Detalla el compromiso"
+      />
+    
+      <div id="respuesta"></div>
+
+      <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
+    </form>
+    <script src="js/form.js"></script>
+  </body>
+</html>
