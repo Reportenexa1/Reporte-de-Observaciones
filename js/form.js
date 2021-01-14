@@ -18,12 +18,12 @@ document.querySelector("#submit").addEventListener("click", e => {
 		*_REPORTE DE OBSERVACIONES_*%0A
 		*MANTENIMIENTO*%0A%0A
 		*OBSERVADOR*%0A
-    ${cliente}%0A
-    *ACTIVIDAD*%0A
+    		${cliente}%0A
+    		*ACTIVIDAD*%0A
 		${empleado}%0A
 		*FECHA*%0A
-    ${fecha}%0A
-    *ACTIVIDAD*%0A
+   		${fecha}%0A
+    		*DETALLE*%0A
 		${servicio}%0A
 		*COMPROMISO*%0A
 		${hora}`;
