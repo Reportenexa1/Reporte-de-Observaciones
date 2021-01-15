@@ -1,5 +1,4 @@
-document.querySelector("#submit").addEventListener("click", e => {
-  e.preventDefault();
+document.querySelector("#submit").addEventListener("click", e => {e.preventDefault();
 
   //INGRESE UN NUMERO DE WHATSAPP VALIDO AQUI:
   let telefono = "51933429595";
@@ -12,24 +11,22 @@ document.querySelector("#submit").addEventListener("click", e => {
   let servicio = document.querySelector("#servicio").value;
   let resp = document.querySelector("#respuesta");
 
-  resp.classList.remove("fail");
-  resp.classList.remove("send");
-
-  let url = `https://api.whatsapp.com/send?phone=${telefono}&text=
-	*_REPORTE DE OBSERVACIONES_*%0A
-	*MANTENIMIENTO*%0A%0A
-  *OBSERVADOR*%0A
-  *FECHA*%0A
-  ${fecha}%0A
-  *HORA*%0A
-  ${hora}%0A
-  *ACTIVIDAD CRITICA - LUGAR*%0A
-  ${empleado}%0A
-	*DESCRIPCIÓN*%0A
-  ${servicio}%0A
-  *COMPROMISO*%0A
-  ${compromiso}%0A
-	`;
+resp.classList.remove("fail");
+resp.classList.remove("send");
+let url = `https://api.whatsapp.com/send?phone=${telefono}&text=
+*_REPORTE DE OBSERVACIONES_*%0A
+*MANTENIMIENTO*%0A%0A
+*OBSERVADOR*%0A
+*FECHA*%0A
+${fecha}%0A
+*HORA*%0A
+${hora}%0A
+*ACTIVIDAD CRITICA - LUGAR*%0A
+${empleado}%0A
+*DESCRIPCIÓN*%0A
+${servicio}%0A
+*COMPROMISO*%0A
+${compromiso}%0A`;
 
   if (cliente === "" || fecha === "" || hora === "") {
     resp.classList.add("fail");
@@ -42,4 +39,3 @@ document.querySelector("#submit").addEventListener("click", e => {
 
   window.open(url);
 });
-
