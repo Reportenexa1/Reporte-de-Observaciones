@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
-    <form action="" class="formulario">
+    <form action="" class="formulario" enctype="multipart/form-data">
       <img src="logo.jpg" class="imgLogo" />
 
       <h1 class="formulario__titulo">Reporte de Observaciones</h1>
@@ -73,7 +73,10 @@
       class="formulario__input"
       placeholder="Detalla el compromiso"
       />
-    
+     <p>
+      <input type="file" name="archivo" accept="image/" multiple >
+
+     </p>
       <div id="respuesta"></div>
 
       <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
